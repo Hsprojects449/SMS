@@ -1,0 +1,32 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SchoolApp.Models
+{
+    public class StudentApplicant
+    {
+        public Guid StudentApplicantID { get; set; }
+        public string Name { get; set; }
+        public string Class { get; set; }
+        public int ClassID { get; set; }
+        public DateTime DOB { get; set; }
+        public string PasswordHash { get; set; }
+        public string Gender { get; set; }
+        public string ContactEmail { get; set; }
+        public string ParentName { get; set; }
+        public string ParentPhone { get; set; }
+        public string? Address { get; set; }
+        public string? MedicalRecordPath { get; set; }
+        public DateTime RequestedAt { get; set; } = DateTime.UtcNow;
+        public string? ProfilePicture { get; set; }
+
+        // New fields
+        public string? PhoneNumber { get; set; }
+        public string? BloodGroup { get; set; }
+        public string? Caste { get; set; }
+        public string? Religion { get; set; }
+        public string? Nationality { get; set; }
+        public string? AadhaarNo { get; set; }
+    }
+}

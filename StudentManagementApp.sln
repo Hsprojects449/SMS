@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "studentmanagementapp.client", "studentmanagementapp.client\studentmanagementapp.client.esproj", "{104C42E0-886E-3460-86F5-455B20E9CF77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagementApp.Server", "StudentManagementApp.Server\StudentManagementApp.Server.csproj", "{0ED9B67E-823E-4243-BDBC-746F4B2AA9BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{104C42E0-886E-3460-86F5-455B20E9CF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104C42E0-886E-3460-86F5-455B20E9CF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104C42E0-886E-3460-86F5-455B20E9CF77}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{104C42E0-886E-3460-86F5-455B20E9CF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104C42E0-886E-3460-86F5-455B20E9CF77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104C42E0-886E-3460-86F5-455B20E9CF77}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0ED9B67E-823E-4243-BDBC-746F4B2AA9BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED9B67E-823E-4243-BDBC-746F4B2AA9BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED9B67E-823E-4243-BDBC-746F4B2AA9BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED9B67E-823E-4243-BDBC-746F4B2AA9BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {242876F6-E78B-472C-AC29-BEDD1E014257}
+	EndGlobalSection
+EndGlobal
