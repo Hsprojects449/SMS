@@ -25,6 +25,11 @@ namespace SchoolApp.Models
         public DbSet<Mark> Marks { get; set; }
         public DbSet<Timetable> Timetables { get; set; }
         public DbSet<Period> Periods { get; set; }
+        public DbSet<Hostel> Hostels { get; set; }
+        public DbSet<FeesPlan> FeesPlans { get; set; }
+        public DbSet<Fee> Fees {  get; set; }
+        public DbSet<ExaminationPlan> ExaminationPlans { get; set; }
+        public DbSet<Exam> Exams { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

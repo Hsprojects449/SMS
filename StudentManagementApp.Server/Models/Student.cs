@@ -29,5 +29,8 @@ namespace SchoolApp.Models
         public string? Religion { get; set; }
         public string? Nationality { get; set; }
         public string? AadhaarNo { get; set; }
+        [ForeignKey("Hostel")]
+        public Guid? HostelID { get; set; }  // FK to Hostel.HostelID
+        public DateTime CreatedAt { get; set; }
     }
 }
