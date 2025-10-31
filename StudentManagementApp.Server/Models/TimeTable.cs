@@ -21,5 +21,8 @@ namespace SchoolApp.Models
         public DateTime? CreatedAt { get; set; } = DateTime.UtcNow;
 
         public ICollection<Attendance> Attendances { get; set; }
+        [ForeignKey("School")]
+        public Guid SchoolID { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

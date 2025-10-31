@@ -16,6 +16,7 @@ namespace SchoolApp.Models
         public string Status { get; set; }
         public decimal Concession { get; set; }
         public string Type { get; set; }                // Regular / Donation
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

@@ -13,5 +13,8 @@ namespace SchoolApp.Models
         public string? NoticeContent { get; set; }
         public DateTime? Occurance { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        [ForeignKey("School")]
+        public Guid SchoolID { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

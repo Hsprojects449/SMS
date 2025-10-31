@@ -22,5 +22,6 @@ namespace SchoolApp.Models
         public Timetable? Timetable { get; set; }
         [ForeignKey("User")]
         public string MarkedUser { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

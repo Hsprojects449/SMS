@@ -13,5 +13,6 @@ namespace SchoolApp.Models
         public DateTime UploadedAt { get; set; }
         [ForeignKey("User")]
         public int MarkedBy { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

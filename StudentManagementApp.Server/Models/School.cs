@@ -15,6 +15,7 @@ namespace SchoolApp.Models
         public string ContactEmail { get; set; }
         public string ContactPhone { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
         // public ICollection<User> Users { get; set; }
     }
 }

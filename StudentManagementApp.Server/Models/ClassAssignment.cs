@@ -11,10 +11,11 @@ namespace SchoolApp.Models
         [ForeignKey("Teacher")]
         public int TeacherID { get; set; }
         [ForeignKey("School")]
-        public int SchoolID { get; set; }
+        public Guid SchoolID { get; set; }
         [ForeignKey("Class")]
         public int ClassID { get; set; }
         public string Subject { get; set; }
         public DateTime UploadedAt { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

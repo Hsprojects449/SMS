@@ -32,6 +32,7 @@ namespace SchoolApp.Models
         //added for forgot password functionality
         public string? ResetPasswordToken { get; set; }
         public DateTime? ResetPasswordTokenExpiry { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }
 

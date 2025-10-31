@@ -12,6 +12,9 @@ namespace SchoolApp.Models
         public TimeSpan StartTime { get; set; }
         public TimeSpan EndTime { get; set; }
         public DateTime? CreatedAt { get; set; } = DateTime.UtcNow;
+        [ForeignKey("School")]
+        public Guid SchoolID { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
 
         // public ICollection<Timetable> Timetables { get; set; }
     }

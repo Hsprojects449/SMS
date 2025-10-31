@@ -12,5 +12,8 @@ namespace SchoolApp.Models
         public string StoredFileName { get; set; }
         public string FilePath { get; set; }
         public DateTime UploadedAt { get; set; }
+        [ForeignKey("School")]
+        public Guid SchoolID { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

@@ -12,5 +12,8 @@ namespace SchoolApp.Models
         public string From { get; set; }
         public string To { get; set; }
         public int SyllabusID { get; set; }
+        [ForeignKey("School")]
+        public Guid SchoolID { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

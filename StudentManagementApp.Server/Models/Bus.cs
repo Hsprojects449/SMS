@@ -17,5 +17,8 @@ namespace SchoolApp.Models
         [Column(TypeName = "longtext")]
         public string? AssignedUsers { get; set; }
         public string? RemovedUsers { get; set; }
+        [ForeignKey("School")]
+        public Guid SchoolID { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

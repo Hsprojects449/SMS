@@ -15,5 +15,6 @@ namespace SchoolApp.Models
         public bool IsCompleted { get; set; }
         public double Score { get; set; }
         public DateTime AttemptedAt { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

@@ -15,6 +15,7 @@ namespace SchoolApp.Models
         public string FeeStatus { get; set; }
         public decimal Marks { get; set; }
         public string Status { get; set; }          // e.g., Passed, Failed
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

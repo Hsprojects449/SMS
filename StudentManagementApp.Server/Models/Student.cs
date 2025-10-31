@@ -31,6 +31,7 @@ namespace SchoolApp.Models
         public string? AadhaarNo { get; set; }
         [ForeignKey("Hostel")]
         public Guid? HostelID { get; set; }  // FK to Hostel.HostelID
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

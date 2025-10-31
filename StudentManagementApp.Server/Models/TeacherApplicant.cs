@@ -25,5 +25,8 @@ namespace SchoolApp.Models
         public string? Religion { get; set; }
         public string? Nationality { get; set; }
         public string? AadhaarNo { get; set; }
+        [ForeignKey("School")]
+        public Guid SchoolID { get; set; }
+        public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

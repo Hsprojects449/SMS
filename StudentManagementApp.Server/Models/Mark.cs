@@ -17,5 +17,6 @@ namespace SchoolApp.Models
     [ForeignKey("Syllabus")]
     public string Syllabus { get; set; }
     public float? MarksObtained { get; set; }
-}
+    public DateTime LastUpdatedAt { get; set; } = DateTime.UtcNow;
+    }
 }
